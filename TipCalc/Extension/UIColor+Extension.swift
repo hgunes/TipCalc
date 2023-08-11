@@ -1,5 +1,5 @@
 //
-//  UIColor-Extension.swift
+//  UIColor+Extension.swift
 //  TipCalc
 //
 //  Created by Harun Gunes on 10/08/2023.

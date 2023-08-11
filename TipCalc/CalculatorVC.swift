@@ -23,7 +23,7 @@ class CalculatorVC: UIViewController {
             billInputView,
             tipInputView,
             splitInputView,
-//            UIView()
+            UIView()
        ])
         stackView.axis = .vertical
         stackView.spacing = 36
