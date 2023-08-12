@@ -17,7 +17,7 @@ class ResultView: UIView {
     private let amountPerPersonLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        let text = NSMutableAttributedString(string: "$0", attributes: [.font: ThemeFont.bold(ofSize: 48)])
+        let text = NSMutableAttributedString(string: "$000", attributes: [.font: ThemeFont.bold(ofSize: 48)])
         text.addAttributes([.font: ThemeFont.bold(ofSize: 24)],
                            range: NSMakeRange(0, 1))
         label.attributedText = text
@@ -35,6 +35,7 @@ class ResultView: UIView {
             headerLabel,
             amountPerPersonLabel,
             horizontalLineView,
+            buildSpacerView(height: 0),
             hStackView
         ])
         stackView.axis = .vertical
@@ -44,9 +45,11 @@ class ResultView: UIView {
     
     private lazy var hStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
-            AmountView(),
+            AmountView(title: "Total bill",
+                       textAlignment: .left),
             UIView(),
-            AmountView()
+            AmountView(title: "Total tip",
+                       textAlignment: .right),
         ])
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
@@ -81,20 +84,10 @@ class ResultView: UIView {
                   radius: 12,
                   opacity: 0.1)
     }
-}
-
-class AmountView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        layout()
-    }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    private func buildSpacerView(height: CGFloat) -> UIView {
+        let view = UIView()
+        view.heightAnchor.constraint(equalToConstant: height).isActive = true
+        return view
     }
-    
-    func layout() {
-        backgroundColor = .red
-    }
-    
 }

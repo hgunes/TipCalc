@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE26C9FC2A86DCD900341E1B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */; };
+		BE26C9FE2A87488900341E1B /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C9FD2A87488900341E1B /* AmountView.swift */; };
 		BE6063AE2A856C0400F9589A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */; };
 		BE6063B02A856E0700F9589A /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AF2A856E0700F9589A /* ThemeFont.swift */; };
 		BE6063B32A85722300F9589A /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063B22A85722300F9589A /* LabelFactory.swift */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		BE26C9FD2A87488900341E1B /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BE6063AF2A856E0700F9589A /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		BE6063B22A85722300F9589A /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				BE6DA4F92A8566E0003C402A /* BillInputView.swift */,
 				BE6DA4FB2A856702003C402A /* TipInputView.swift */,
 				BE6DA4FD2A85671C003C402A /* SplitInputView.swift */,
+				BE26C9FD2A87488900341E1B /* AmountView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				BE639B3F2A8559F800141440 /* CalculatorVC.swift in Sources */,
 				BE6063B32A85722300F9589A /* LabelFactory.swift in Sources */,
 				BE6DA4FE2A85671C003C402A /* SplitInputView.swift in Sources */,
+				BE26C9FE2A87488900341E1B /* AmountView.swift in Sources */,
 				BE6063AE2A856C0400F9589A /* UIColor+Extension.swift in Sources */,
 				BE26C9FC2A86DCD900341E1B /* UIView+Extension.swift in Sources */,
 				BE6DA4F82A8566BC003C402A /* ResultView.swift in Sources */,
