@@ -44,8 +44,6 @@ class AmountView: UIView {
         return stackView
     }()
     
-    
-    
     init(title: String, textAlignment: NSTextAlignment) {
         self.title = title
         self.textAlignment = textAlignment

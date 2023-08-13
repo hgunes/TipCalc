@@ -10,7 +10,10 @@ import UIKit
 class BillInputView: UIView {
     
     private let headerView: HeaderView = {
-       HeaderView()
+        let view = HeaderView()
+        view.configure(topText: "Enter",
+                       bottomText: "your bill")
+        return view
     }()
     
     private let textFieldContainerView: UIView = {
@@ -77,7 +80,7 @@ class BillInputView: UIView {
             make.leading.equalToSuperview()
             make.centerY.equalTo(textFieldContainerView.snp.centerY)
             make.width.equalTo(68)
-            make.height.equalTo(24)
+            make.height.equalTo(textFieldContainerView.snp.height)
             make.trailing.equalTo(textFieldContainerView.snp.leading).offset(-24)
         }
         
@@ -105,18 +108,3 @@ class BillInputView: UIView {
     }
 }
 
-class HeaderView: UIView {
-    
-    init() {
-        super.init(frame: .zero)
-        layout()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    func layout() {
-        backgroundColor = .red
-    }
-}
