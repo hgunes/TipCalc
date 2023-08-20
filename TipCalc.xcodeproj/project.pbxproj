@@ -33,6 +33,7 @@
 		BE7C52DA2A88D7B30079E65A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7C52D92A88D7B30079E65A /* Result.swift */; };
 		BE92F0C22A91EF7D001F36A0 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE92F0C12A91EF7D001F36A0 /* CombineCocoa */; };
 		BE92F0C42A91FD3E001F36A0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */; };
+		BE92F0C62A9212E1001F36A0 /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		BE7C52D72A88D34A0079E65A /* CalculatorVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorVM.swift; sourceTree = "<group>"; };
 		BE7C52D92A88D7B30079E65A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../../../../../../Downloads/String+Extension.swift"; sourceTree = "<group>"; };
+		BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 				BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */,
 				BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */,
 				BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */,
+				BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE92F0C62A9212E1001F36A0 /* UIResponder+Extension.swift in Sources */,
 				BE6DA4FA2A8566E0003C402A /* BillInputView.swift in Sources */,
 				BE6DA4FC2A856702003C402A /* TipInputView.swift in Sources */,
 				BE639B3F2A8559F800141440 /* CalculatorVC.swift in Sources */,
