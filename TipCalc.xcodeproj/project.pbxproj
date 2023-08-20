@@ -34,6 +34,7 @@
 		BE92F0C22A91EF7D001F36A0 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE92F0C12A91EF7D001F36A0 /* CombineCocoa */; };
 		BE92F0C42A91FD3E001F36A0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */; };
 		BE92F0C62A9212E1001F36A0 /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */; };
+		BE92F0C82A927F85001F36A0 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C72A927F85001F36A0 /* Int+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		BE7C52D92A88D7B30079E65A /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../../../../../../Downloads/String+Extension.swift"; sourceTree = "<group>"; };
 		BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
+		BE92F0C72A927F85001F36A0 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */,
 				BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */,
 				BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */,
+				BE92F0C72A927F85001F36A0 /* Int+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				BE6DA4FC2A856702003C402A /* TipInputView.swift in Sources */,
 				BE639B3F2A8559F800141440 /* CalculatorVC.swift in Sources */,
 				BE78414A2A88C09B0015EE9C /* Tip.swift in Sources */,
+				BE92F0C82A927F85001F36A0 /* Int+Extension.swift in Sources */,
 				BE6063B32A85722300F9589A /* LabelFactory.swift in Sources */,
 				BE6DA4FE2A85671C003C402A /* SplitInputView.swift in Sources */,
 				BE26C9FE2A87488900341E1B /* AmountView.swift in Sources */,
