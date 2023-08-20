@@ -52,7 +52,7 @@ class CalculatorVC: UIViewController {
         
         let output = vm.transform(input: input)
         output.updateViewPublisher.sink { result in
-            print(">>>>>>> \(result)")
+            
         }.store(in: &cancellables)
         
     }
