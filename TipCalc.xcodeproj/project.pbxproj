@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE26C9FC2A86DCD900341E1B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */; };
 		BE26C9FE2A87488900341E1B /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C9FD2A87488900341E1B /* AmountView.swift */; };
+		BE3190992A9FC67700A17AC9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3190982A9FC67700A17AC9 /* Double+Extension.swift */; };
 		BE6063AE2A856C0400F9589A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */; };
 		BE6063B02A856E0700F9589A /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AF2A856E0700F9589A /* ThemeFont.swift */; };
 		BE6063B32A85722300F9589A /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063B22A85722300F9589A /* LabelFactory.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BE26C9FD2A87488900341E1B /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
+		BE3190982A9FC67700A17AC9 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BE6063AF2A856E0700F9589A /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		BE6063B22A85722300F9589A /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */,
 				BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */,
 				BE92F0C72A927F85001F36A0 /* Int+Extension.swift */,
+				BE3190982A9FC67700A17AC9 /* Double+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 			files = (
 				BE92F0C62A9212E1001F36A0 /* UIResponder+Extension.swift in Sources */,
 				BE6DA4FA2A8566E0003C402A /* BillInputView.swift in Sources */,
+				BE3190992A9FC67700A17AC9 /* Double+Extension.swift in Sources */,
 				BE6DA4FC2A856702003C402A /* TipInputView.swift in Sources */,
 				BE639B3F2A8559F800141440 /* CalculatorVC.swift in Sources */,
 				BE78414A2A88C09B0015EE9C /* Tip.swift in Sources */,
