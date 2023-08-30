@@ -28,7 +28,6 @@ class CalculatorVC: UIViewController {
        ])
         stackView.axis = .vertical
         stackView.spacing = 48
-//        stackView.distribution = .fillProportionally
         return stackView
     }()
     
@@ -51,8 +50,8 @@ class CalculatorVC: UIViewController {
             splitPublisher: splitInputView.valuePublisher)
         
         let output = vm.transform(input: input)
-        output.updateViewPublisher.sink { result in
-            
+        output.updateViewPublisher.sink { [unowned self] result in
+            resultView.configure(result: result)
         }.store(in: &cancellables)
         
     }

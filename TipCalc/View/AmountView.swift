@@ -25,7 +25,7 @@ class AmountView: UIView {
         let label = UILabel()
         label.textAlignment = textAlignment
         label.textColor = ThemeColor.primary
-        let text = NSMutableAttributedString(string: "$000",
+        let text = NSMutableAttributedString(string: "$0",
                                              attributes: [.font: ThemeFont.bold(ofSize: 24)])
         text.addAttributes([.font: ThemeFont.bold(ofSize: 16)],
                            range: NSMakeRange(0, 1))
@@ -39,8 +39,6 @@ class AmountView: UIView {
             amountLabel
         ])
         stackView.axis = .vertical
-//        stackView.spacing = 20
-//        stackView.alignment = .center
         return stackView
     }()
     
@@ -53,6 +51,17 @@ class AmountView: UIView {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(text: String) {
+        let text = NSMutableAttributedString(
+            string: text,
+            attributes: [.font: ThemeFont.bold(ofSize: 24)])
+        text.addAttributes(
+            [.font: ThemeFont.bold(ofSize: 16)],
+            range: NSMakeRange(0, 1))
+        
+        amountLabel.attributedText = text
     }
     
     func layout() {

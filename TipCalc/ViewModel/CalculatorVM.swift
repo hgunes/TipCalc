@@ -35,7 +35,7 @@ class CalculatorVM {
                 
                 let result = Result(
                     amountPerPerson: amountPerPerson,
-                    totalBill: totalTip,
+                    totalBill: totalBill,
                     totalTip: totalTip)
                 
                 return Just(result).eraseToAnyPublisher()
