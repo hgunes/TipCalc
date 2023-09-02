@@ -10,6 +10,8 @@
 		BE26C9FC2A86DCD900341E1B /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */; };
 		BE26C9FE2A87488900341E1B /* AmountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE26C9FD2A87488900341E1B /* AmountView.swift */; };
 		BE3190992A9FC67700A17AC9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3190982A9FC67700A17AC9 /* Double+Extension.swift */; };
+		BE31909C2AA3231700A17AC9 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE31909B2AA3231700A17AC9 /* click.m4a */; };
+		BE31909F2AA3239100A17AC9 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31909E2AA3239100A17AC9 /* AudioPlayerService.swift */; };
 		BE6063AE2A856C0400F9589A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */; };
 		BE6063B02A856E0700F9589A /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AF2A856E0700F9589A /* ThemeFont.swift */; };
 		BE6063B32A85722300F9589A /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063B22A85722300F9589A /* LabelFactory.swift */; };
@@ -59,6 +61,8 @@
 		BE26C9FB2A86DCD900341E1B /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		BE26C9FD2A87488900341E1B /* AmountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountView.swift; sourceTree = "<group>"; };
 		BE3190982A9FC67700A17AC9 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		BE31909B2AA3231700A17AC9 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		BE31909E2AA3239100A17AC9 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
 		BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		BE6063AF2A856E0700F9589A /* ThemeFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFont.swift; sourceTree = "<group>"; };
 		BE6063B22A85722300F9589A /* LabelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelFactory.swift; sourceTree = "<group>"; };
@@ -116,6 +120,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE31909A2AA322F000A17AC9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BE31909B2AA3231700A17AC9 /* click.m4a */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BE31909D2AA3234700A17AC9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BE31909E2AA3239100A17AC9 /* AudioPlayerService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		BE6063B12A85720600F9589A /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +168,8 @@
 		BE639B392A8559F800141440 /* TipCalc */ = {
 			isa = PBXGroup;
 			children = (
+				BE31909D2AA3234700A17AC9 /* Service */,
+				BE31909A2AA322F000A17AC9 /* Resource */,
 				BE7C52D62A88D3170079E65A /* ViewModel */,
 				BE7841482A88C0800015EE9C /* Model */,
 				BE6063B12A85720600F9589A /* Factory */,
@@ -358,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE31909C2AA3231700A17AC9 /* click.m4a in Resources */,
 				BE639B472A8559FD00141440 /* LaunchScreen.storyboard in Resources */,
 				BE639B442A8559FD00141440 /* Assets.xcassets in Resources */,
 			);
@@ -385,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE92F0C62A9212E1001F36A0 /* UIResponder+Extension.swift in Sources */,
+				BE31909F2AA3239100A17AC9 /* AudioPlayerService.swift in Sources */,
 				BE6DA4FA2A8566E0003C402A /* BillInputView.swift in Sources */,
 				BE3190992A9FC67700A17AC9 /* Double+Extension.swift in Sources */,
 				BE6DA4FC2A856702003C402A /* TipInputView.swift in Sources */,
