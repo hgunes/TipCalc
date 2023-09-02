@@ -90,6 +90,10 @@ class SplitInputView: UIView {
     
     // MARK: - Helpers
     
+    func reset() {
+        splitSubject.send(1)
+    }
+    
     private func layout() {
         [headerView, stackView].forEach(addSubview)
         
