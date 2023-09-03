@@ -12,6 +12,7 @@
 		BE3190992A9FC67700A17AC9 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3190982A9FC67700A17AC9 /* Double+Extension.swift */; };
 		BE31909C2AA3231700A17AC9 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE31909B2AA3231700A17AC9 /* click.m4a */; };
 		BE31909F2AA3239100A17AC9 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE31909E2AA3239100A17AC9 /* AudioPlayerService.swift */; };
+		BE5219152AA497C10079A10C /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE5219142AA497C10079A10C /* CombineCocoa */; };
 		BE6063AE2A856C0400F9589A /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AD2A856C0400F9589A /* UIColor+Extension.swift */; };
 		BE6063B02A856E0700F9589A /* ThemeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063AF2A856E0700F9589A /* ThemeFont.swift */; };
 		BE6063B32A85722300F9589A /* LabelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6063B22A85722300F9589A /* LabelFactory.swift */; };
@@ -106,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE5219152AA497C10079A10C /* CombineCocoa in Frameworks */,
 				BE639B752A855D1A00141440 /* SnapshotTesting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +304,7 @@
 			name = TipCalcTests;
 			packageProductDependencies = (
 				BE639B742A855D1A00141440 /* SnapshotTesting */,
+				BE5219142AA497C10079A10C /* CombineCocoa */,
 			);
 			productName = TipCalcTests;
 			productReference = BE639B4D2A8559FE00141440 /* TipCalcTests.xctest */;
@@ -789,6 +792,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		BE5219142AA497C10079A10C /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE92F0C02A91EF7D001F36A0 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
+		};
 		BE639B6E2A855C8900141440 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = BE639B6D2A855C8800141440 /* XCRemoteSwiftPackageReference "SnapKit" */;
