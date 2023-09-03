@@ -39,6 +39,7 @@
 		BE92F0C42A91FD3E001F36A0 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */; };
 		BE92F0C62A9212E1001F36A0 /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */; };
 		BE92F0C82A927F85001F36A0 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92F0C72A927F85001F36A0 /* Int+Extension.swift */; };
+		BEC658802AA4AAA9008DA7E1 /* TipCalcSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6587F2AA4AAA9008DA7E1 /* TipCalcSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		BE92F0C32A91FD3E001F36A0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "../../../../../../Downloads/String+Extension.swift"; sourceTree = "<group>"; };
 		BE92F0C52A9212E1001F36A0 /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
 		BE92F0C72A927F85001F36A0 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		BEC6587F2AA4AAA9008DA7E1 /* TipCalcSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalcSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				BE639B512A8559FE00141440 /* TipCalcTests.swift */,
+				BEC6587F2AA4AAA9008DA7E1 /* TipCalcSnapshotTests.swift */,
 			);
 			path = TipCalcTests;
 			sourceTree = "<group>";
@@ -439,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC658802AA4AAA9008DA7E1 /* TipCalcSnapshotTests.swift in Sources */,
 				BE639B522A8559FE00141440 /* TipCalcTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
