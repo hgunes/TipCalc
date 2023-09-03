@@ -15,10 +15,13 @@ final class TipCalcTests: XCTestCase {
     
     private var sut: CalculatorVM!
     private var cancellables: Set<AnyCancellable>!
-    private let logoViewTapPublisher = PassthroughSubject<Void, Never>()
-
+    private var logoViewTapPublisher: PassthroughSubject<Void, Never>!
+    private var mockPlayer: MockAudioPlayerService!
+    
     override func setUp() {
-        sut = .init()
+        mockPlayer = .init()
+        sut = .init(audioPlayerService: mockPlayer)
+        logoViewTapPublisher = .init()
         cancellables = .init()
         super.setUp()
     }
@@ -27,6 +30,8 @@ final class TipCalcTests: XCTestCase {
         super.tearDown()
         sut = nil
         cancellables = nil
+        mockPlayer = nil
+        logoViewTapPublisher = nil
     }
 
     func testResultWithoutTipFor1Person() {
@@ -113,6 +118,23 @@ final class TipCalcTests: XCTestCase {
         }.store(in: &cancellables)
     }
     
+    func testSoundPlayedAndResetCalculatorOnLogoViewTap() {
+        // given
+        let input = buildInput(bill: 100, tip: .tenPercent, split: 2)
+        let output = sut.transform(input: input)
+        let expectation1 = XCTestExpectation(description: "reset calculator called")
+        let expectation2 = mockPlayer.expectation
+        
+        // then
+        output.resetCalculatorPublisher.sink { _ in
+            expectation1.fulfill()
+        }.store(in: &cancellables)
+        
+        // when
+        logoViewTapPublisher.send()
+        wait(for: [expectation1, expectation2], timeout: 1.0)
+    }
+    
     private func buildInput(bill: Double, tip: Tip, split: Int) -> CalculatorVM.Input {
         return .init(
             billPublisher: Just(bill).eraseToAnyPublisher(),
@@ -120,5 +142,13 @@ final class TipCalcTests: XCTestCase {
             splitPublisher: Just(split).eraseToAnyPublisher(),
             logoViewTapPublisher: logoViewTapPublisher.eraseToAnyPublisher()
         )
+    }
+}
+
+class MockAudioPlayerService: AudioPlayerService {
+    var expectation = XCTestExpectation(description: "play sound")
+    
+    func playSound() {
+        expectation.fulfill()
     }
 }
