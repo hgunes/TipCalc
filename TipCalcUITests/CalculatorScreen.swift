@@ -68,7 +68,7 @@ class CalculatorScreen {
     }
     
     var splitValueLabel: XCUIElement {
-        app.buttons[ScreenIdentifier.SplitInputView.qtyValueLabel.rawValue]
+        app.staticTexts[ScreenIdentifier.SplitInputView.qtyValueLabel.rawValue]
     }
     
     var decrementButton: XCUIElement {
@@ -77,10 +77,6 @@ class CalculatorScreen {
     
     var alertOkButton: XCUIElement {
         app.buttons[ScreenIdentifier.CustomTipAlert.alertOkButton.rawValue]
-    }
-    
-    var alertCancelButton: XCUIElement {
-        app.buttons[ScreenIdentifier.CustomTipAlert.alertCancelButton.rawValue]
     }
     
     enum Tip {
@@ -127,9 +123,5 @@ class CalculatorScreen {
     
     func alertOkButtonPressed() {
         alertOkButton.tap()
-    }
-    
-    func alertCancelButtonPressed() {
-        alertCancelButton.tap()
     }
 }
