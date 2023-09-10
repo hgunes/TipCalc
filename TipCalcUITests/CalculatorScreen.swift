@@ -75,6 +75,14 @@ class CalculatorScreen {
         app.buttons[ScreenIdentifier.SplitInputView.decrementButton.rawValue]
     }
     
+    var alertOkButton: XCUIElement {
+        app.buttons[ScreenIdentifier.CustomTipAlert.alertOkButton.rawValue]
+    }
+    
+    var alertCancelButton: XCUIElement {
+        app.buttons[ScreenIdentifier.CustomTipAlert.alertCancelButton.rawValue]
+    }
+    
     enum Tip {
         case tenPercent
         case fifteenPercent
@@ -117,4 +125,11 @@ class CalculatorScreen {
         logoView.tap(withNumberOfTaps: 2, numberOfTouches: 1)
     }
     
+    func alertOkButtonPressed() {
+        alertOkButton.tap()
+    }
+    
+    func alertCancelButtonPressed() {
+        alertCancelButton.tap()
+    }
 }

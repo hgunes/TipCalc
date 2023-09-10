@@ -31,6 +31,11 @@ enum ScreenIdentifier {
         case customTipAlertTextField
     }
     
+    enum CustomTipAlert: String {
+        case alertOkButton
+        case alertCancelButton
+    }
+    
     enum SplitInputView: String {
         case decrementButton
         case qtyValueLabel

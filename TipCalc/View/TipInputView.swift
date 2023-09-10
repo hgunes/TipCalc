@@ -134,11 +134,8 @@ class TipInputView: UIView {
                 textField.placeholder = "Make it generous!"
                 textField.keyboardType = .numberPad
                 textField.autocorrectionType = .no
+                textField.accessibilityIdentifier = ScreenIdentifier.TipInputView.customTipAlertTextField.rawValue
             }
-            
-            let cancelAction = UIAlertAction(
-                title: "Cancel",
-                style: .cancel)
             
             let okAction = UIAlertAction(
                 title: "OK",
@@ -148,6 +145,12 @@ class TipInputView: UIView {
                     
                     self?.tipSubject.send(.custom(value: value))
                 }
+            okAction.accessibilityIdentifier = ScreenIdentifier.CustomTipAlert.alertOkButton.rawValue
+            
+            let cancelAction = UIAlertAction(
+                title: "Cancel",
+                style: .cancel)
+            cancelAction.accessibilityIdentifier = ScreenIdentifier.CustomTipAlert.alertCancelButton.rawValue
             
             [okAction, cancelAction].forEach(controller.addAction(_:))
             return controller
