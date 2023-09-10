@@ -65,14 +65,12 @@ class TipCalcSnapshotTests: XCTestCase {
     func testBillInputViewWithValues() {
         // given
         let size = CGSize(width: screenWidth, height: 56)
-        let result = Result(
-            amountPerPerson: 100.25,
-            totalBill: 45,
-            totalTip: 60)
+        
         // when
         let view = BillInputView()
         let textField = view.allSubViewsOf(type: UITextField.self).first
         textField?.text = "500"
+       
         // then
         assertSnapshot(matching: view, as: .image(size: size))
     }
@@ -130,10 +128,10 @@ extension UIView {
      This is a function to get subViews of a particular type from view recursively.
      It would look recursively in all subviews and return back the subviews of the type T
      */
-    func allSubViewsOf<T : UIView>(type : T.Type) -> [T]{
+    func allSubViewsOf<T : UIView>(type : T.Type) -> [T] {
         var all = [T]()
         func getSubview(view: UIView) {
-            if let aView = view as? T{
+            if let aView = view as? T {
                 all.append(aView)
             }
             guard view.subviews.count>0 else { return }
