@@ -105,7 +105,8 @@ class CalculatorScreen {
     }
     
     func selectIncrementButton(numberOfTaps: Int) {
-        incrementButton.tap(withNumberOfTaps: numberOfTaps, numberOfTouches: 1)
+        incrementButton.tap(withNumberOfTaps: numberOfTaps,
+                            numberOfTouches: 1)
     }
     
     func selectDecrementButton(numberOfTaps: Int) {
