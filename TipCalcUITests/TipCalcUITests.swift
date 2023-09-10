@@ -31,4 +31,6 @@ final class TipCalcUITests: XCTestCase {
         XCTAssertEqual(screen.totalBillValueLabel.label, "$0")
         XCTAssertEqual(screen.totalTipValueLabel.label, "$0")
     }
+    
+    
 }
